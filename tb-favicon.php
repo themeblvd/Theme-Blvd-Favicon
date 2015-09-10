@@ -25,7 +25,6 @@ License: GPL2
     http://www.gnu.org/licenses/gpl-2.0.html
 
 */
-
 define( 'TB_FAVICON_PLUGIN_VERSION', '1.0.2' );
 define( 'TB_FAVICON_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'TB_FAVICON_PLUGIN_URI', plugins_url( '' , __FILE__ ) );
@@ -45,39 +44,39 @@ function themeblvd_favicon_init() {
 	}
 
 	// Add "Configuration" options tab, if it doesn't already exist.
-	themeblvd_add_option_tab( 'config', __( 'Configuration', 'themeblvd_favicon' ) );
+	themeblvd_add_option_tab( 'config', __('Configuration', 'theme-blvd-favicon') );
 
 	// Setup option params
-	$name = __( 'Favicons', 'themeblvd_favicon' );
-	$description = __( 'A favicon generally appears at the top of the web browser next to the title or URL of your website for your online visitors. The favicon also gets associated with your website when users bookmark it. In addition to the standard favicon, you can also configure the Apple touch icons that users see when bookmarking your website from various Apple devices.<br><br><strong>These are all completely optional; any items you leave blank in this section will simply not display on your website.</strong>', 'themeblvd_favicon' );
+	$name = __('Favicons', 'theme-blvd-favicon');
+	$description = __('A favicon generally appears at the top of the web browser next to the title or URL of your website for your online visitors. The favicon also gets associated with your website when users bookmark it. In addition to the standard favicon, you can also configure the Apple touch icons that users see when bookmarking your website from various Apple devices.<br><br><strong>These are all completely optional; any items you leave blank in this section will simply not display on your website.</strong>', 'theme-blvd-favicon');
 	$options = apply_filters( 'themeblvd_favicon_options', array(
 		'favicon' => array(
-			'name' 		=> __( 'Standard Favicon (16x16)', 'themeblvd_favicon' ),
-			'desc' 		=> __( 'Insert the URL to the .ico file or PNG image you\'d like to use as your website\'s favicon.<br><br>For help generating a standard favicon ICO file, visit <a href="http://www.favicon.cc/" target="_blank">favicon.cc</a>.', 'themeblvd_favicon' ),
+			'name' 		=> __('Standard Favicon (16x16)', 'theme-blvd-favicon'),
+			'desc' 		=> __('Insert the URL to the .ico file or PNG image you\'d like to use as your website\'s favicon.<br><br>For help generating a standard favicon ICO file, visit <a href="http://www.favicon.cc/" target="_blank">favicon.cc</a>.', 'theme-blvd-favicon'),
 			'id' 		=> 'favicon',
 			'type' 		=> 'upload'
 		),
 		'apple_touch_57x57' => array(
-			'name' 		=> __( 'Standard Apple Touch Icon (57x57)', 'themeblvd_favicon' ),
-			'desc' 		=> __( 'Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on standard apple devices.<br><br>This is more of the "fallback" for older Apple devices.', 'themeblvd_favicon' ),
+			'name' 		=> __('Standard Apple Touch Icon (57x57)', 'theme-blvd-favicon'),
+			'desc' 		=> __('Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on standard apple devices.<br><br>This is more of the "fallback" for older Apple devices.', 'theme-blvd-favicon'),
 			'id' 		=> 'apple_touch_57x57',
 			'type' 		=> 'upload'
 		),
 		'apple_touch_72x72' => array(
-			'name' 		=> __( 'Apple Touch Icon - iPad 1st/2nd Generation (72x72)', 'themeblvd_favicon' ),
-			'desc' 		=> __( 'Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on first and second generation iPads.', 'themeblvd_favicon' ),
+			'name' 		=> __('Apple Touch Icon - iPad 1st/2nd Generation (72x72)', 'theme-blvd-favicon'),
+			'desc' 		=> __('Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on first and second generation iPads.', 'theme-blvd-favicon'),
 			'id' 		=> 'apple_touch_72x72',
 			'type' 		=> 'upload'
 		),
 		'apple_touch_114x114' => array(
-			'name' 		=> __( 'Apple Touch Icon - iPhone with Retina (114x114)', 'themeblvd_favicon' ),
-			'desc' 		=> __( 'Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on for the iPhone 4S and later, which come with retina display.', 'themeblvd_favicon' ),
+			'name' 		=> __('Apple Touch Icon - iPhone with Retina (114x114)', 'theme-blvd-favicon'),
+			'desc' 		=> __('Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on for the iPhone 4S and later, which come with retina display.', 'theme-blvd-favicon'),
 			'id' 		=> 'apple_touch_114x114',
 			'type' 		=> 'upload'
 		),
 		'apple_touch_144x144' => array(
-			'name' 		=> __( 'Apple Touch Icon - iPad with Retina (144x144)', 'themeblvd_favicon' ),
-			'desc' 		=> __( 'Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on third generation iPads and later, which come with retina display.', 'themeblvd_favicon' ),
+			'name' 		=> __('Apple Touch Icon - iPad with Retina (144x144)', 'theme-blvd-favicon'),
+			'desc' 		=> __('Insert the URL to the PNG image file you\'d like to use as your website\'s Apple touch icon on third generation iPads and later, which come with retina display.', 'theme-blvd-favicon'),
 			'id' 		=> 'apple_touch_144x144',
 			'type' 		=> 'upload'
 		)
@@ -99,7 +98,7 @@ add_action( 'after_setup_theme', 'themeblvd_favicon_init' );
  */
 
 function themeblvd_favicon_textdomain() {
-	load_plugin_textdomain( 'themeblvd_favicon', false, TB_FAVICON_PLUGIN_DIR . '/lang' );
+	load_plugin_textdomain( 'theme-blvd-favicon', false, TB_FAVICON_PLUGIN_DIR . '/lang' );
 }
 add_action( 'plugins_loaded', 'themeblvd_favicon_textdomain' );
 
@@ -113,7 +112,7 @@ add_action( 'plugins_loaded', 'themeblvd_favicon_textdomain' );
 
 function themeblvd_favicon_warning() {
 	echo '<div class="updated">';
-	echo '<p>'.__( 'You currently have the "Theme Blvd Favicon" plugin activated, however you are not using a theme with Theme Blvd Framework v2.1+, and so this plugin will not do anything.', 'themeblvd_favicon' ).'</p>';
+	echo '<p>'.esc_html__('You currently have the "Theme Blvd Favicon" plugin activated, however you are not using a theme with Theme Blvd Framework v2.1+, and so this plugin will not do anything.', 'theme-blvd-favicon' ).'</p>';
 	echo '</div>';
 }
 

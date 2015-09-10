@@ -25,6 +25,8 @@ After activating this plugin, a new section of Favicon options will be added to 
 
 = 1.0.2 - 09/10/2015 =
 
+* Added GlotPress compatibility.
+
 = 1.0.1 - 07/30/2013 =
 
 * Added compatibility for Theme Blvd Framework v2.3+.
