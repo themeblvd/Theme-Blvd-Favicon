@@ -2,7 +2,7 @@
 /*
 Plugin Name: Theme Blvd Favicon
 Description: Easily add a standard favicon along with optional bookmark icons for all portable Apple devices to your Theme Blvd theme.
-Version: 1.0.1
+Version: 1.0.2
 Author: Jason Bobich
 Author URI: http://jasonbobich.com
 License: GPL2
@@ -26,7 +26,7 @@ License: GPL2
 
 */
 
-define( 'TB_FAVICON_PLUGIN_VERSION', '1.0.1' );
+define( 'TB_FAVICON_PLUGIN_VERSION', '1.0.2' );
 define( 'TB_FAVICON_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'TB_FAVICON_PLUGIN_URI', plugins_url( '' , __FILE__ ) );
 

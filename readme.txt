@@ -1,7 +1,7 @@
 === Theme Blvd Favicon ===
 Contributors: themeblvd
 Tags: favicon, themeblvd, theme blvd, Jason Bobich, Bobich
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Easily add a standard favicon along with optional bookmark icons for all portable Apple devices to your Theme Blvd theme.
 
@@ -23,11 +23,13 @@ After activating this plugin, a new section of Favicon options will be added to 
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 - 09/10/2015 =
+
+= 1.0.1 - 07/30/2013 =
 
 * Added compatibility for Theme Blvd Framework v2.3+.
 * Added `themeblvd_favicon_options` filter to favicon options.
 
-= 1.0.0 =
+= 1.0.0 - 08/31/2012 =
 
 * This is the first release.
