@@ -3,11 +3,13 @@ Contributors: themeblvd
 Tags: favicon, themeblvd, theme blvd, Jason Bobich, Bobich
 Stable tag: 1.0.2
 
-Easily add a standard favicon along with optional bookmark icons for all portable Apple devices to your Theme Blvd theme.
+Add a favicon and bookmark icons for apple touch devices to your Theme Blvd theme. An alternative to default favicon support in WordPress 4.3+.
 
 == Description ==
 
-After activating this plugin, a new section of Favicon options will be added to the Theme Options page of your Theme Blvd theme. Here you can configure a standard favicon along with bookmark icons for all portable Apple devices. All settings are completely optional. -- Don't need a bookmark for the 2nd generation iPad? Just leave it blank.
+After activating this plugin, a new section of Favicon options will be added to the Theme Options page of your Theme Blvd theme. Here you can configure a standard favicon along with bookmark icons for all portable Apple devices. All settings are completely optional.
+
+In WordPress 4.3, default favicon support was added to WordPress within the customizer. However, this plugin can still be useful if you're looking to expand support of your favicon to touch device icons. In the future, I hope to re-write this plugin to work with, and expand on, the default WordPress favicon system.
 
 **NOTE: For this plugin to do anything, you must have a theme with Theme Blvd framework v2.1+ activated.**
 
@@ -25,6 +27,7 @@ After activating this plugin, a new section of Favicon options will be added to 
 
 = 1.0.2 - 09/10/2015 =
 
+* Code cleanup and very minor security fixes.
 * Added GlotPress compatibility.
 
 = 1.0.1 - 07/30/2013 =
